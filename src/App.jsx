@@ -4,14 +4,13 @@ import './App.css';
 import Button from './assets/components/Buttons/Button';
 import Product from './assets/components/Products/Product';
 //  Images Products
-import bagNum01 from './assets/bag_1.png';
-import bagNum02 from './assets/bag_2.png';
-import bagNum03 from './assets/bag_3.png';
-import bagNum04 from './assets/bag_4.png';
+import { getImages } from './assets/components/images/images';
+const [bag01, bag02, bag03, bag04] = getImages()
+
 import AboutTile from './assets/components/About/About';
 // About us images
-import brand from './assets/brand.png';
-import ourStory from './assets/our_story.png';
+import brand from './assets/components/images/brand.png';
+import ourStory from './assets/components/images/our_story.png';
 
 
 function App() {
@@ -51,34 +50,34 @@ function App() {
       <main>
         <Product 
         label="Best seller"
-        image={ bagNum01 } 
+        image={ bag01 } 
         altText="Nice bag with soft colortone"
         nameBag="The handy bag"
-        priceBag="€400,-" 
+        priceBag="400" 
         />
 
         <Product 
         label="Best seller"
-        image={ bagNum02 } 
+        image={ bag02 } 
         altText="Nice bag with a brown color"
         nameBag="The stylisch bag"
-        priceBag="€250,-" 
+        priceBag="250" 
         />
 
         <Product 
         label="Best seller"
-        image={ bagNum03 } 
+        image={ bag03 } 
         altText="Nice bag with an mos green color"
         nameBag="The simple bag"
-        priceBag="€300,-" 
+        priceBag="300" 
         />
 
         <Product 
         label="Best seller"
-        image={ bagNum04 } 
+        image={ bag04 } 
         altText="Nice bag with an yellow color"
         nameBag="The trendy bag"
-        priceBag="€150,-" 
+        priceBag="150" 
         />
 
       </main>
